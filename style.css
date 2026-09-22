@@ -184,7 +184,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   border-bottom:1px solid var(--accent);
   font-weight:600;
 }
-.nav-dropdown{position:relative;}
+.nav-dropdown{position:relative; border-bottom:0; padding:0;}
 .nav-dropdown summary{list-style:none; cursor:pointer; color:var(--text); font-size:0.82rem; font-weight:500; padding:0.3rem 0; white-space:nowrap;}
 .nav-dropdown summary::-webkit-details-marker{display:none;}
 .nav-dropdown summary span{font-size:0.9rem; margin-left:0.15rem;}
