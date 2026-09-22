@@ -211,7 +211,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   .main-nav.open{display:flex;}
   .main-nav a{width:100%; padding:0.75rem 0; border-bottom:1px solid var(--line-soft);}
   .nav-dropdown{width:100%;}
-  .nav-dropdown summary{padding:0.75rem 0; border-bottom:1px solid var(--line-soft);}
+  .nav-dropdown summary{padding:0.75rem 0; border-bottom:0;}
   .nav-dropdown-menu{position:static; transform:none; min-width:0; padding:0 0 0 1rem; border:0; box-shadow:none; background:transparent;}
   .nav-dropdown-menu a{padding:0.65rem 0; border-bottom:1px solid var(--line-soft);}
   .nav-toggle{
