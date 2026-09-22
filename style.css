@@ -179,7 +179,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   white-space:nowrap;
 }
 .main-nav a:hover{color:var(--accent-deep);}
-.main-nav a.active{
+.main-nav > a.active{
   color:var(--ink);
   border-bottom:1px solid var(--accent);
   font-weight:600;
