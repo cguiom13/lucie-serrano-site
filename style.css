@@ -592,10 +592,12 @@ section{padding:4.5rem 0;}
 
 /* ---------- FAQ ---------- */
 .faq-list{border-top:1px solid var(--line);}
-details{
+details{       
   border-bottom:1px solid var(--line);
   padding:1.3rem 0;
 }
+.nav-dropdown{border-bottom:0; padding:0;}
+.nav-dropdown > summary{border-bottom:0;}
 summary{
   cursor:pointer;
   font-weight:600;
