@@ -239,7 +239,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   display:grid;
   grid-template-columns:1.3fr 1fr 1fr;
   gap:2.5rem;
+  min-width:0;
 }
+.footer-inner > div{min-width:0;}
+.footer-inner a,.footer-inner p{overflow-wrap:anywhere;}
 .footer-inner h4{
   font-family:var(--font-body);
   color:var(--blush);
@@ -301,6 +304,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   margin-bottom:1.4rem;
   max-width:14ch;
 }
+.hero h1 span{display:block;}
 .hero-lede{
   font-size:1.12rem;
   color:var(--text);
@@ -653,6 +657,7 @@ details p{margin-top:0.9rem; color:var(--text-muted); font-size:0.96rem; max-wid
 }
 
 @media (max-width:700px){
+  .footer-inner{grid-template-columns:1fr; padding-left:1rem; padding-right:1rem; gap:1.8rem;}
   .nav-row{padding:0.9rem 1rem; gap:0.6rem;}
   .brand{gap:0.55rem; min-width:0;}
   .brand img{width:48px; height:48px;}
