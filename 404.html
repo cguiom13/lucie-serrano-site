@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page introuvable — Lucie Serrano, Psychologue</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-mark.png" alt="Logo du cabinet Lucie Serrano">
+      <span class="brand-text">
+        <span class="name">Lucie Serrano</span>
+        <span class="role">Psychologue · Neuropsychologue<br>Psychothérapeute TCC</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-navigation">☰</button>
+    <nav class="main-nav" id="main-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="approche.html">Qui suis-je</a>
+      <details class="nav-dropdown"><summary>Prestations <span aria-hidden="true">⌄</span></summary><div class="nav-dropdown-menu"><a href="bilan-neuropsychologique-saint-chamond.html">Bilan neuropsychologique</a><a href="therapie-tcc-saint-chamond.html">Psychothérapie TCC</a></div></details>
+      <a href="prestations.html">Prestations & tarifs</a>
+      <a href="faq.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn nav-cta">Prendre rendez-vous</a>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="page-header container">
+    <p class="eyebrow-plain">Erreur 404</p>
+    <h1>Cette page n'existe pas ou plus</h1>
+    <p class="lede">Le lien que vous avez suivi est peut-être incorrect, ou la page a été déplacée.</p>
+  </div>
+
+  <section>
+    <div class="container hero-ctas">
+      <a href="index.html" class="btn">Retour à l'accueil</a>
+      <a href="contact.html" class="btn-ghost">Prendre rendez-vous →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">Lucie Serrano</p>
+      <p>Psychologue clinicienne · Neuropsychologue · Psychothérapeute TCC</p>
+      <p>Maison de Santé Pluridisciplinaire<br>73 Rue de la République, 42400 Saint-Chamond</p>
+      <p><a href="tel:+33744766140">07 44 76 61 40</a><br><a href="mailto:contact@lucieserrano-psy.fr">contact@lucieserrano-psy.fr</a></p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="approche.html">Qui suis-je</a><br>
+      <a href="prestations.html">Prestations & tarifs</a><br>
+      <a href="faq.html#faq">FAQ</a><br>
+      <a href="contact.html">Contact & RDV</a>
+    </div>
+    <div>
+      <h4>Informations</h4>
+      <p>N° RPPS : 10009831198</p>
+      <a href="mentions-legales.html">Mentions légales</a><br>
+      <a href="contact.html">Prendre rendez-vous</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Lucie Serrano — Tous droits réservés.</div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('main-navigation');
+  if(!toggle || !nav) return;
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>
