@@ -299,12 +299,18 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
   font-weight:600;
   margin-bottom:1rem;
 }
-.hero h1{
+.hero h1.hero-kicker{
+  font-family:var(--font-body);
+  font-size:0.95rem;
+  line-height:1.68;
+  max-width:none;
+}
+.hero-slogan{
   font-size:3.1rem;
   margin-bottom:1.4rem;
   max-width:14ch;
 }
-.hero h1 span{display:block;}
+.hero-slogan span{display:block;}
 .hero-lede{
   font-size:1.12rem;
   color:var(--text);
@@ -326,7 +332,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible{
 
 @media (max-width:880px){
   .hero-grid{grid-template-columns:1fr; gap:2.5rem;}
-  .hero h1{font-size:2.3rem; max-width:none;}
+  .hero-slogan{font-size:2.3rem; max-width:none;}
   .hero-visual{order:-1; max-width:280px; margin:0 auto;}
 }
 
@@ -414,7 +420,10 @@ section{padding:4.5rem 0;}
 .page-header{padding:3.6rem 0 2.6rem; border-bottom:1px solid var(--line);}
 .page-header .eyebrow-plain{font-size:0.94rem; color:var(--accent-deep); font-weight:600; margin-bottom:0.8rem;}
 .page-header h1{font-size:2.5rem; max-width:20ch; margin-bottom:1rem;}
+.page-header h1.eyebrow-plain{font-family:var(--font-body); line-height:1.68; max-width:none;}
+.page-header .page-title{font-size:2.5rem; max-width:20ch; margin-bottom:1rem;}
 .page-header .lede{font-size:1.05rem; color:var(--text-muted); max-width:56ch;}
+.legal-container h2{font-size:1.35rem;}
 
 /* ---------- Bio / approche ---------- */
 .bio-grid{
@@ -509,7 +518,9 @@ section{padding:4.5rem 0;}
   align-items:start;
 }
 .price-row .tag{font-size:0.78rem; color:var(--accent-deep); font-weight:600; margin-bottom:0.5rem; display:block;}
-.price-row h3{font-size:1.4rem; margin-bottom:0.7rem;}
+.price-row h2{font-size:1.4rem; margin-bottom:0.7rem;}
+.contextual-link{text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:0.14em;}
+.contextual-link:hover{color:var(--accent-deep);}
 .price-row p.desc{font-size:0.98rem; color:var(--text); max-width:54ch; margin-bottom:0.9rem;}
 .price-row .modes{display:flex; gap:0.6rem; flex-wrap:wrap;}
 .mode-badge{
@@ -582,7 +593,7 @@ section{padding:4.5rem 0;}
   font-size:1.1rem;
   color:var(--accent-deep);
 }
-.steps h4{font-size:1.03rem; margin-bottom:0.3rem; color:var(--ink);}
+.steps h3{font-size:1.03rem; margin-bottom:0.3rem; color:var(--ink);}
 .steps p{font-size:0.94rem; color:var(--text-muted);}
 
 .track-label{
